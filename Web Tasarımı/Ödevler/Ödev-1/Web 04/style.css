@@ -1,0 +1,45 @@
+body{
+    font-size: 32px;
+    text-align: center;
+}
+header{
+    float: left;
+    background-color: darkmagenta;
+    color: white;
+    width: 680px;
+    height: 80px;
+}
+aside{
+    clear: both;
+    background-color: darkseagreen;
+    color: white;
+    width: 120px;
+    height: 180px;
+    float: left;
+}
+section{
+    background-color: deepskyblue;
+    color: white;
+    width: 440px;
+    height: 360px;
+    float: left;
+}
+nav{
+    background-color: darkred;
+    color: white;
+    width: 120px;
+    height: 360px;
+    float: left;
+}
+footer{
+    clear: both;
+    background-color: gold;
+    color: white;
+    width: 680px;
+    height: 60px;
+    float: left;
+}
+.box-1{
+    clear: both;
+    float: left;
+}

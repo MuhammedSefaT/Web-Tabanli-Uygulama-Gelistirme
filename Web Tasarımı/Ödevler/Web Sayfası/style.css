@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+header{
+    /* background-color: rgb(46, 45, 45); */
+    background-color: rgb(207, 219, 219);
+    color: black;
+    width: 100%;
+    height: 50px;
+    padding-top: 22px;
+    position: fixed;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    margin-left: 8px;
+}
+a:hover{
+    color: #42855B;
+}
+.logo{
+    margin-left: 220px;
+}
+.home{
+    margin-left: 800px;
+}
+section{
+    background-image: url('./images/el.webp');
+    width: 100%;
+    height: 600px;
+}
+aside{
+    margin-top: 128px;
+    margin-bottom: 128px;
+    text-align: center;
+}
+.card{
+    width: 260px;
+    height: 420px;
+    border: 1px solid;
+    margin-left: 32px;
+    margin-top: 132px;
+    margin-bottom: 128px;
+    float: left;
+}
+.card:hover{
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+.s-card{
+    width: 260px;
+    height: 420px;
+    margin-left: 42px;
+    margin-top: 132px;
+    /* border: 1px solid; */
+    margin-bottom: 64px;
+    float: left;
+}
+.s-card-1{
+    margin-left: 510px;
+}
+.card-1{
+    margin-left: 360px;
+}
+.card-img{
+    width: 260px;
+    height: 220px;
+}
+.s-card-img{
+    width: 260px;
+    /* height: 220px; */
+}
+.card-info{
+    margin-top: 32px;
+}
+.s-card-info{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.s-card-title{
+    margin-top: 12px;
+}
+.box-1{
+    float: left;
+}
+.box-2{
+    float: left;
+}
+.text{
+    color: black;
+    font-size: 42px;
+}
+.text-2{
+    color: white;
+    text-align: center;
+    font-size: 52px;
+    padding-top: 256px;
+}
+.link{
+    color: blue;
+    text-decoration: solid;
+}
+.aside-2{
+    clear: both;
+    margin: 0 0 0 0;
+    background-color: #c0e3cc;
+    width: 100%;
+    height: 700px;
+    padding-top: 64px;
+}
+.text-3{
+    color: black;
+    font-size: 42px;
+}
+.i-card-img{
+    margin-top: 32px;
+}
+footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 128px;
+    padding-top: 200px;
+}
