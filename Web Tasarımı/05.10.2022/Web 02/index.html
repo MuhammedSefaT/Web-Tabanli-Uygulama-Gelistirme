@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-ad{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="post">
+        <p>Adınız : <input type="text" class="text-ad" placeholder="Ad" id="isim" required></p>
+        <p>Soyadınız : <input type="text" placeholder="Soyad" required></p>
+        <p>TC No: <input type="text" placeholder="Tc No" minlength="11" maxlength="11" required></p>
+        <p>Telefon No : <input type="tel" placeholder="Telefon No" minlength="11" maxlength="11" required></p>
+        <p>Mail Adresi : <input type="email" placeholder="Mail Adresi" required></p>
+        <p>Web Siteniz : <input type="url" placeholder="Web Siteniz" required></p>
+        <p>
+            <input type="checkbox" name="TV" value="sec">TV
+            <input type="checkbox" name="KOD" value="sec">Kod Yazmak
+            <input type="checkbox" name="TELEFON" value="sec">Telefon Oynamak
+        </p>
+        <p>
+            <input type="radio" name="cins" value="cins1">Erkek
+            <input type="radio" name="cins" value="cins2">Kız
+            <input type="radio" name="cins" value="cins3">Belirtmeyi Tercih Etmiyorum
+        </p>
+        <button type="submit">Gönder</button>
+        <button type="reset">Temizle</button>
+    </form>
+
+</body>
+</html>
