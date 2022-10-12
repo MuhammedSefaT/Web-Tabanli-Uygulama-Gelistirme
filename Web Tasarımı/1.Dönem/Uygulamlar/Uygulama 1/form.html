@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            float: right;
+        }
+        .box-1{
+            width: 140px;
+            height: 140px;
+            border: 1px solid;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formu Doldurunuz</h1>
+    <form action="post">
+        <table width="600" border="1" bgcolor="aqua">
+            <tr height="150">
+                <td colspan="2">
+                    <div class="box-1"><img src="./images/robot.jpg" width="140" height="140"></div>
+                </td>
+            </tr>
+            <tr>
+                <td width="200"><label>Ad Soyad *</label></td>
+                <td width="400"><input type="text" required width="400"></td>
+            </tr>
+            <tr>
+                <td width="200"><label>Şifreniz *</label></td>
+                <td width="400"><input type="text" required width="400"></td>
+            </tr>
+            <tr>
+                <td width="200"><label>Doğum Tarihi *</label></td>
+                <td width="400"><input type="date" required width="400"></td>
+            </tr>
+            <tr>
+                <td width="200"><label>Cinsiyet *</label></td>
+                <td width="400">
+                    <input type="radio" name="radio" value="1" required width="400">Erkek
+                    <input type="radio" name="radio" value="2" required width="400">Kadın
+                </td>
+            </tr>
+            <tr>
+                <td width="200"><label>E-Posta Adresi *</label></td>
+                <td width="400"><input type="email" required width="400"></td>
+            </tr>
+            <tr>
+                <td width="200"><label>Telefon *</label></td>
+                <td width="400"><input type="tel" placeholder="(___)(_______)" required width="400"></td>
+            </tr>
+            <tr>
+                <td width="200"><label>Mezuniyet Durumu *</label></td>
+                <td width="400">
+                    <input type="radio" name="radio" value="3" required width="400">İlkokul
+                    <input type="radio" name="radio" value="4" required width="400">Ortaokul
+                    <input type="radio" name="radio" value="5" required width="400">Lise
+                    <input type="radio" name="radio" value="6" required width="400">Üniversite
+                </td>
+            </tr>
+            <tr>
+                <td width="200"><label>İngilizce Seviyeniz *</label></td>
+                <td width="400">
+                    <select name="ing-seviye">
+                        <option value="0">Seçiniz...</option>
+                        <option value="1">Bilmiyorum</option>
+                        <option value="2">Orta Seviye</option>
+                        <option value="3">İleri Seviye</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td width="200"><label>Çalışmak İstediğinz Pozisyon</label></td>
+                <td width="400">
+                    <input type="checkbox" required width="400">Bilgi işleme<br>
+                    <input type="checkbox" required width="400">Muhasebe<br>
+                    <input type="checkbox" required width="400">Pazarlama<br>
+                    <input type="checkbox" required width="400">Asistan<br>
+                </td>
+            </tr>
+            <tr>
+                <td width="200"><label>İngilizce Seviyeniz *</label></td>
+                <td width="400">
+                    <select name="ing-seviye">
+                        <option value="0">Seçiniz...</option>
+                        <option value="1">Tecilli</option>
+                        <option value="2">Muaf</option>
+                        <option value="3">Yapıldı</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td width="200"><label>Ek Bilgi</label></td>
+                <td width="400">
+                    <textarea name="yazi" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td width="200" colspan="2">
+                    <button type="submit">BAŞVUR</button>
+                    <button type="reset">TEMİZLE</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
