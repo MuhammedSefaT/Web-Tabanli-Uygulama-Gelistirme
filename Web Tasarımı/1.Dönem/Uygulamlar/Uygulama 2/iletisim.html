@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+        }
+        .box-1{
+            float: left;
+        }
+        .box-2{
+            margin-left: 3px;
+            float: left;
+        }
+        .box-3{
+            clear: both;
+            float: left;
+        }
+        fieldset{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Kişisel Bilgiler</legend>
+        <div class="box-1">
+            <label for="">İsminiz :</label><br>
+            <input type="text" placeholder="isminizi yazınız">
+            <br>
+            <label for="">E mailiniz</label><br>
+            <input type="email" required>
+            <br>
+            <label for="">Cinsiyetiniz :</label><br>
+            <input type="radio" name="cins" value="1">Kız 
+            <input type="radio" name="cins" value="2">Erkek
+            <br>
+            <label for="">Doğum Tarihiniz :</label><br>
+            <input type="date">
+        </div>
+        <div class="box-2">
+            <label for="">Soy isminiz:</label><br>
+            <input type="text">
+            <br>
+            <label for="">Şifreniz:</label><br>
+            <input type="password" maxlength="8" placeholder="max 8 karakter">
+            <br>
+            <label for="">Memleketiniz:</label><br>
+            <select name="memleket">
+                <option value="0">Seçiniz...</option>
+                <option value="1">Malatya</option>
+                <option value="3">Elazığ</option>
+                <option value="4">Adana</option>
+            </select>
+        </div>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Eğitim Bilgileri</legend>
+        <div class="box-1">
+            <label for="">Sınıfınız</label><br>
+            <input type="text">
+        </div>
+        <div class="box-2">
+            <label for="">Öğrenci NO :</label><br>
+            <input type="text">
+        </div>
+        <div class="box-3">
+            <label for="">Bildiğiniz Diller</label><br>
+            <input type="checkbox" value="1">C#
+            <input type="checkbox" value="2">JAVA
+            <input type="checkbox" value="3">C++
+            <input type="checkbox" value="4">PYTHON
+            <input type="checkbox" value="5">C
+            <input type="checkbox" value="6">Diğerleri
+        </div>
+    </fieldset>
+    <br>
+    <fieldset>
+        <textarea name="yaziAlani" id="1" cols="50" rows="3" placeholder="yorum ekleyiniz"></textarea>
+        <br>
+        <input type="checkbox" value="7">Yukarıda ki bilgilerin doğruluğunu onaylıyorum
+        <button type="submit">Gönder</button>
+    </fieldset>
+</body>
+</html>
