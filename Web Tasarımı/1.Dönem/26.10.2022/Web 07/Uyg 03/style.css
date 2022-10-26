@@ -1,0 +1,57 @@
+body{
+    text-align: center;
+}
+
+.container{
+    width: 800px;
+    margin: auto;
+}
+
+.banner{
+    float: left;
+    background-color: khaki;
+    width: 800px;
+    height: 120px;
+    line-height: 120px;
+}
+
+.menu{
+    clear: both;
+    background-color: goldenrod;
+    width: 200px;
+    height: 500px;
+    line-height: 500px;
+    float: left;
+}
+
+.icerik{
+    float: left;
+    background-color: green;
+    width: 600px;
+    height: 500px;
+    line-height: 500px;
+}
+
+.reklam-alani{
+    clear: both;
+    width: 800px;
+    height: 120px;
+    float: left;
+}
+
+.rek{
+    float: left;
+    background-color: darkred;
+    width: 266.5px;
+    height: 120px;
+    line-height: 120px;
+}
+
+.alt-bilgi{
+    clear: both;
+    background-color: aquamarine;
+    width: 800px;
+    height: 120px;
+    line-height: 120px;
+    float: left;
+}

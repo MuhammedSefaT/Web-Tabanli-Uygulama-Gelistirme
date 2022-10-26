@@ -1,0 +1,43 @@
+body{
+    color: rgb(122, 121, 121);
+    text-align: center;
+}
+
+.container{
+    width: 800px;
+    border: 0px solid black;
+    margin: auto;
+}
+
+.banner{
+    background-color: aquamarine;
+    width: 800px;
+    height: 120px;
+    line-height: 120px;
+}
+
+.navbar{
+    clear: both;
+    background-color: rgb(221, 255, 127);
+    width: 200px;
+    height: 450px;
+    line-height: 450px;
+    float: left;
+}
+
+.icerik{
+    float: left;
+    background-color: rgb(139, 210, 212);
+    width: 600px;
+    height: 450px;
+    line-height: 450px;
+}
+
+.alt-bilgi{
+    clear: both;
+    background-color: cornflowerblue;
+    width: 800px;
+    height: 120px;
+    line-height: 120px;
+    float: left;
+}

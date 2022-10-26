@@ -1,0 +1,15 @@
+p>b{
+    color: red;
+    font-size: 12px;
+}
+
+p b a{
+    color: aquamarine;
+    font-size: 20px;
+    font-style: italic;
+}
+
+h1,h2,h3{
+    font-style: italic;
+    color: cadetblue;
+}
