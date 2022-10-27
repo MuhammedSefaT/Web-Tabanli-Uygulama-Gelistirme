@@ -1,0 +1,80 @@
+body{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+a:hover{
+    color: firebrick;
+}
+
+.container{
+    width: 800px;
+    margin: auto;
+    border: 0px solid black;
+}
+
+.banner{
+    float: left;
+    width: 800px;
+    height: 120px;
+    line-height: 120px;
+    background-color: cadetblue;
+    margin-bottom: 10px;
+    background-image: url('./images/banner.jpg');
+    opacity: 0.7;
+}
+.banner:hover{
+    opacity: 1.0;
+}
+
+.menu{
+    clear: both;
+    width: 800px;
+    height: 80px;
+    line-height: 80px;
+    background-color: bisque;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.sol-menu{
+    clear: both;
+    width: 200px;
+    height: 400px;
+    line-height: 400px;
+    background-color: darksalmon;
+    float: left;
+}
+
+.icerik{
+    float: left;
+    width: 400px;
+    height: 400px;
+    line-height: 400px;
+    background-color: darkseagreen;
+}
+
+.sag-icerik{
+    float: left;
+    width: 200px;
+    height: 400px;
+    line-height: 400px;
+    background-color: grey;
+}
+
+.alt-bilgii{
+    clear: both;
+    width: 800px;
+    height: 120px;
+    line-height: 120px;
+    margin-top: 10px;
+    background-color: greenyellow;
+    float: left;
+}
