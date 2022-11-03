@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        table{
+            border-color: blue;
+        }
+        .renk-2{
+            color: red;
+        }
+        .renk{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" width="600">
+        <caption>Html Tablo Kullanımı</caption>
+        <tr>
+            <td colspan="4" class="renk">
+                <b>
+                    Alış Veriş Tablosu
+                </b>
+            </td>
+        </tr>
+        <tr>
+            <td class="renk-2">Tür</td>
+            <td class="renk-2">Ürün</td>
+            <td class="renk-2">Fiyat</td>
+            <td class="renk-2">İndirim Oranı</td>
+        </tr>
+        <tr>
+            <td rowspan="5">Beyaz Eşya</td>
+            <td>Buzdolabı</td>
+            <td>1.750</td>
+            <td rowspan="3">%25</td>
+        </tr>
+        <tr>
+            <td>Fırın</td>
+            <td>650</td>
+        </tr>
+        <tr>
+            <td>Çamaşır Makinesi</td>
+            <td>1.100</td>
+        </tr>
+        <tr>
+            <td>Bulaşık Makinesi</td>
+            <td>750</td>
+            <td rowspan="2">%35</td>
+        </tr>
+        <tr>
+            <td>Dondurucu</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Küçük Ev Aletleri</td>
+            <td>Mikser</td>
+            <td>138</td>
+            <td rowspan="2">%10</td>
+        </tr>
+        <tr>
+            <td>Saç Kurutma</td>
+            <td>151</td>
+        </tr>
+    </table>
+</body>
+</html>

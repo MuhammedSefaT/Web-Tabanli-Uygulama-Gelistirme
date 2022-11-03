@@ -1,0 +1,209 @@
+body{
+    text-align: center;
+    color: white;
+}
+
+.container{
+    width: 1000px;
+    border: 0px solid;
+    margin: auto;
+}
+
+.ust-menu{
+    width: 1000px;
+    height: 90px;
+    background-color: black;
+    line-height: 90px;
+}
+
+.ust-img-menu{
+    float: right;
+    margin-left: 12px;
+}
+
+.ust-img-menu:hover{
+    opacity: 0.7;
+}
+
+.ara-button:hover{
+    background-color: aquamarine;
+    color: red;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.yazi-alani{
+    background-image: url('./images/search.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.ara{
+    width: 300px;
+    height: 90px;
+    float: left;
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+.resimler{
+    width: 700px;
+    height: 90px;
+    float: left;
+    /* background-color: rgb(86, 138, 138); */
+}
+
+.menu-res{
+    width: 1000px;
+    height: 200px;
+    background-color: black;
+    /* background-image: url('./images/web-logo-horizontal2-1.png'); */
+    background-repeat: no-repeat;
+}
+
+.menu{
+    width: 1000px;
+    height: 60px;
+    line-height: 60px;
+    background-color: rgb(105, 105, 105);
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    margin-left: 6px;
+    line-height: 60px;
+}
+
+.link{
+    width: 143px;
+    height: 60px;
+    float: left;
+}
+
+.link2{
+    width: 143px;
+    height: 60px;
+    float: left;
+}
+
+.link3{
+    width: 143px;
+    height: 60px;
+    float: left;
+}
+
+.link4{
+    width: 143px;
+    height: 60px;
+    float: left;
+}
+
+.link5{
+    width: 143px;
+    height: 60px;
+    float: left;
+}
+
+.link6{
+    width: 143px;
+    height: 60px;
+    float: left;
+}
+
+.link7{
+    width: 142px;
+    height: 60px;
+    float: left;
+}
+
+.link3:hover{
+    background-color: bisque;
+}
+
+.link4:hover{
+    background-color: bisque;
+}
+
+.link5:hover{
+    background-color: bisque;
+}
+
+.link6:hover{
+    background-color: bisque;
+}
+
+.link7:hover{
+    background-color: bisque;
+}
+
+.link2:hover{
+    background-color: bisque;
+}
+
+.link:hover{
+    background-color: bisque;
+}
+
+.icerik{
+    width: 1000px;
+    height: 680px;
+    background-color: rgb(71, 71, 71);
+}
+
+.goruntu{
+    float: left;
+    width: 700px;
+    height: 690px;
+    background-color: rgb(131, 131, 131);
+    line-height: 650px;
+}
+
+.sag-menu{
+    float: left;
+    width: 300px;
+    height: 690px;
+    background-color: rgb(131, 131, 131);
+}
+
+.yazilar{
+    float: left;
+    width: 290px;
+    height: 540px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.konum{
+    clear: both;
+    width: 300px;
+    height: 140px;
+    background-color: rgb(131, 131, 131);
+    float: left;
+}
+
+.konum-img{
+    box-sizing: border-box;
+    width: 290px;
+    height: 140px;
+    float: left;
+}
+
+.baslik{
+    background-color: black;
+    color: red;
+}
+
+.alt{
+    width: 1000px;
+    height: 120px;
+    background-color: rgb(94, 94, 94);
+    line-height: 120px;
+    text-align: center;
+}
+
+.ekran{
+    margin-top: 30px;
+}

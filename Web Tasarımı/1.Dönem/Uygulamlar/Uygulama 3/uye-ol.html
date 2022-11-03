@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ad{
+            background-color: blue;
+        }
+        .sifre{
+            background-color: orange;
+        }
+        .tarih{
+            width: 400px;
+        }
+        .posta{
+            background-color: greenyellow;
+        }
+        .tel{
+            background-color: yellow;
+        }
+        select{
+            background-color: green;
+        }
+        option{
+            background-color: yellowgreen;
+        }
+        .rad1{
+            background-color: aquamarine;
+        }
+        .rad2{
+            background-color: darkred;
+        }
+        img{
+            float: right;
+        }
+        .btn:hover{
+            background-color: black;
+            color: white;
+        }
+        .sec1{
+            background-color: aquamarine;
+        }
+        .sec2{
+            background-color: rgb(194, 201, 199);
+        }
+        .sec3{
+            background-color: rgb(48, 156, 228);
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <h1>FORMU DOLDURUNUZ</h1>
+        <table border="1" width="600">
+            <tr width="600">
+                <td colspan="2">
+                    <img src="./images/robot.jpg" width="120" height="120">
+                </td>
+            </tr>
+            <tr>
+                <td width="200">Adı Soyadı *</td>
+                <td>
+                    <input type="text" class="ad" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Şifreniz *</td>
+                <td>
+                    <input type="text" class="sifre" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Doğum Tarihi *</td>
+                <td>
+                    <input type="date" class="tarih" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Cinsiyet *</td>
+                <td>
+                    <input type="radio" name="radio" value="1">Erkek
+                    <input type="radio" name="radio" value="2" >Kız
+                </td>
+            </tr>
+            <tr>
+                <td>E-Posta Adresi *</td>
+                <td>
+                    <input type="email" class="posta" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Telefon *</td>
+                <td>
+                    <input type="text" class="tel" placeholder="(___) (_______)" required maxlength="11" minlength="11">
+                </td>
+            </tr>
+            <tr>
+                <td>Mezuniyet Durumu *</td>
+                <td>
+                    <input type="radio" name="radio" value="1">İlkokul
+                    <input type="radio" name="radio" value="2">Ortaokul
+                    <input type="radio" name="radio" value="3">Lise
+                    <input type="radio" name="radio" value="4">Üniversite
+                </td>
+            </tr>
+            <tr>
+                <td>İngilizce Seviyeniz *</td>
+                <td>
+                    <select name="" id="">
+                        <option value="" class="sec1">Bilmmiyorum</option>
+                        <option value="" class="sec2">Orta</option>
+                        <option value="" class="sec3">Yüksek</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Çalışmak İstediğiniz Pozisyon</td>
+                <td>
+                    <input type="checkbox">Bilgi işleme
+                    <input type="checkbox">Muhasebe
+                    <input type="checkbox">Pazarlama
+                    <input type="checkbox">Aistan
+                </td>
+            </tr>
+            <tr>
+                <td>Askerlik Durumu *</td>
+                <td>
+                    <select name="" id="">
+                        <option value="">Tescilli</option>
+                        <option value="">Tescilsiz</option>
+                        <option value="">Yapılmadı</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Ek Bilgi</td>
+                <td>
+                    <textarea cols="60" rows="10" placeholder="Sizinle ilgili eklemek istediğiniz diğer şeyleri buraya yazabilirsiniz."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" class="btn">Başvur</button>
+                    <button type="reset" class="btn">Temizle</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
