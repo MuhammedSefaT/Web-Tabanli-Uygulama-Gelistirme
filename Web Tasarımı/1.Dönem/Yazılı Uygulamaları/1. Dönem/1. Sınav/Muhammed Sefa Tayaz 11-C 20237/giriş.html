@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* color: white; */
+            background-color: black;
+        }
+        .container{
+            width: 240px;
+            height: 600px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        button{
+            float: right;
+            padding: 12px 20px;
+            background-color: aqua;
+            margin-right: 12px;
+            margin-top: 12px;
+            color: red;
+        }
+
+        .ilk{
+            width: 240px;
+        }
+        .ilk-sol{
+            float: left;
+        }
+        .ilk-sag{
+            float: left;
+            margin-left: 12px;
+            margin-top: 8px;
+        }
+
+        .ikinci{
+            clear: both;
+            width: 240px;
+        }
+        .ikinci-sol{
+            float: left;
+        }
+        .ikinci-sag{
+            float: left;
+            margin-left: 12px;
+            margin-top: 8px;
+        }
+
+        .ücüncü{
+            clear: both;
+            width: 240px;
+        }
+        .ücüncü-sol{
+            float: left;
+        }
+        .ücüncü-sag{
+            float: left;
+            margin-left: 12px;
+            margin-top: 8px;
+        }
+
+        .dorduncu{
+            clear: both;
+            width: 240px;
+            background-color: white;
+        }
+        .dorduncu-sol{
+            padding-top: 30px;
+            float: left;
+        }
+        .dorduncu-sag{
+            float: left;
+            margin-left: 12px;
+            margin-top: 8px;
+        }
+
+        .dorduncu-alt{
+            clear: both;
+            color: black;
+            width: 236px;
+            height: 60px;
+            background-color: black;
+            border-bottom: 2px solid white;
+            border-left: 2px solid white;
+            border-right: 2px solid white;
+        }
+
+        .orta{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="orta">
+            <div class="ilk">
+                <div class="ilk-sol">
+                    <img src="./images/adsoyad.jpg" alt="">
+                </div>
+                <div class="ilk-sag">
+                    <input type="text" placeholder="Ad-Soyad">
+                </div>
+            </div>
+            <div class="ikinci">
+                <div class="ikinci-sol">
+                    <img src="./images/telefon.jpg" alt="">
+                </div>
+                <div class="ikinci-sag">
+                    <input type="text" placeholder="Telefon">
+                </div>
+            </div>
+            <div class="ücüncü">
+                <div class="ücüncü-sol">
+                    <img src="./images/email.jpg" alt="">
+                </div>
+                <div class="ücüncü-sag">
+                    <input type="text" placeholder="E-Mail">
+                </div>
+            </div>
+            <div class="dorduncu">
+                <div class="dorduncu-sol">
+                    <input type="checkbox">Ben robot değilim
+                </div>
+                <div class="dorduncu-sag">
+                    <img src="./images/robot.jpg" alt="">
+                </div>
+                <div class="dorduncu-alt">
+                    <button type="submit">Gönder</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

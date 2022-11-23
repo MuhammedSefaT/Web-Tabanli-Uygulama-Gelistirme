@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+        }
+        .btn-gonder,.btn-temizle{
+            background-color: #686859;
+            color: white;
+        }
+
+        .btn-temizle{
+            border-bottom-left-radius: 32px;
+            border-top-right-radius: 32px;
+        }
+
+        .btn-gonder{
+            border-top-left-radius: 32px;
+            border-bottom-right-radius: 32px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <table border="0">
+            <tr>
+                <td colspan="2">
+                    <h1>Kullanıcı Bilgileri</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Kullanıcı Adı :</label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Şifre :</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="şifre gir">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Şifre Tekrar :</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="şifre tekrarla">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h1>Kişisel Bilgiler</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>e-mail :</label>
+                </td>
+                <td>
+                    <input type="text">@
+                    <select name="mail">
+                        <option>hotmail.com</option>
+                        <option>gmail.com</option>
+                        <option>yandex.com</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>e-mail Tekrar:</label>
+                </td>
+                <td>
+                    <input type="text">@
+                    <select name="mail">
+                        <option>hotmail.com</option>
+                        <option>gmail.com</option>
+                        <option>yandex.com</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Adı :</label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Soyadı :</label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Doğum Tarihi :</label>
+                </td>
+                <td>
+                    <select name="gun">
+                        <option>Gün</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <select name="ay">
+                        <option>Ay</option>
+                        <option>Ocak</option>
+                        <option>Şubat</option>
+                        <option>Mart</option>
+                    </select>
+                    <input type="text" placeholder="Doğum Yılı">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Kişisel Ayarlar:</label>
+                </td>
+                <td>
+                    <select>
+                        <option>Yaş ve doğum tarihini göster</option>
+                        <option>Yaş ve doğum tarihini gösterme</option>
+                        <option>Hiçbir şey gösterme</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Cinsiyet :</label>
+                </td>
+                <td>
+                    <input type="radio" value="1" name="cins">Erkek |
+                    <input type="radio" value="2" name="cins">Kız
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Profil Resmi :</label>
+                </td>
+                <td>
+                    <button>Dosya Seç</button> Dosya Seçilmedi
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" class="btn-gonder">Gönder</button>
+                    <button type="reset" class="btn-temizle">Temizle</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

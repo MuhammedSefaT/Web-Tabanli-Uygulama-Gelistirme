@@ -1,0 +1,31 @@
+.galeri1{
+    border-radius: 12px;
+    width: 280px;
+    height: 280px;
+}
+
+.galeri2{
+    border-bottom-left-radius: 48px;
+    border-top-right-radius: 48px;
+    width: 280px;
+    height: 280px;
+}
+
+.galeri3{
+    border-top-left-radius: 48px;
+    border-bottom-right-radius: 48px;
+    width: 280px;
+    height: 280px;
+}
+
+.galeri4{
+    border-bottom-left-radius: 48px;
+    border-top-right-radius: 48px;
+    width: 280px;
+    height: 280px;
+}
+
+.galeri5, .galeri6{
+    width: 280px;
+    height: 280px;
+}
