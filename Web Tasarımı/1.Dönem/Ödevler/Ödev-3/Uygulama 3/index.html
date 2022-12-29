@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <table>
+            <tr>
+                <td>
+                    <label>Kullanıcı Adı :</label>
+                </td>
+                <td>
+                    <input type="text" name="kadi" id="kadi">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Şifre :</label>
+                </td>
+                <td>
+                    <input type="text" name="sifre" id="sifre">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email :</label>
+                </td>
+                <td>
+                    <input type="email" name="mail" id="mail">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="Gönder" onclick="control()">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script lang="javascript">
+
+        function control() {
+
+            var ad = document.getElementById("kadi").value;
+            var sifre = document.getElementById("sifre").value;
+            var mail = document.getElementById("mail").value;
+
+            var sembol = '*|,:<>[]{}`;()@&$#%!+-"/';
+
+            var sembolvar=false;
+            for (var i = 0; i < sifre.length; i++) {
+                if (sembol.indexOf(sifre.charAt(i))!=-1){
+                    sembolvar=true;
+                }
+            }
+
+            if (sifre == "") {
+                alert("Şifreyi boş geçme");
+            }
+            else{
+                if (sifre.search(/[a-z]/) < 0) {
+                    alert("Şifre en az bir küçük harf içermelidir.");
+                }
+                else if (sifre.search(/[A-Z]/) < 0) {
+                    alert("Şifre en az bir büyük harf içermelidir.");
+                }
+                else if (sifre.search(/[0-9]/) < 0){
+                    alert("Şifre en az bir sayı içermelidir.");
+                }
+                else if (sembolvar == false){
+                    alert("Şifre en az bir sembol içermelidir.");
+                }
+                else{
+                    alert("Doğru Giriş Yaptınız!!!");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

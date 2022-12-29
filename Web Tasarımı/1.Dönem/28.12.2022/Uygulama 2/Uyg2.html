@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* .gizli{
+            visibility: hidden;
+        } */
+    </style>
+    <title>Document</title>
+</head>
+<body onload="CodeYazdir()">
+    <form>
+        <table border="0">
+            <tr>
+                <td colspan="2">
+                    <label>Kullanıcı Adı :</label>
+                </td>
+                <td>
+                    <input type="text" name="Kullanıcı" id="kAdi">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Şifre :</label>
+                </td>
+                <td>
+                    <input type="password" name="Şifre" id="sifre1" onfocus="controlActive()" onblur="controlSifreUzunluk(),buttonActive()">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Şifre Tekrar :</label>
+                </td>
+                <td>
+                    <input type="password" name="Şifre-Tekrar" id="sifre2" disabled onblur="controlSifre(), buttonActive()">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Mail :</label>
+                </td>
+                <td>
+                    <input type="email" name="email" id="mail" onblur="controlMail(), buttonActive()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Kod Giriniz :</label>
+                </td>
+                <td style="width: 75px;">
+                    <b id="kod1"></b>
+                </td>
+                <td>
+                    <input type="text" name="kod-Giriniz" id="kod2" onblur="controlKod(), buttonActive()">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="checkbox" onchange="buttonActive()" name="sec" id="secim"> Şartları okudum ve kabul ediyorum
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="button" value="Gönder" onclick="DegerYazdir(), ClearFix(), CodeYazdir()" id="test" disabled>
+                </td>
+            </tr>
+            <!-- ? Doğru Değerler ! -->
+            <tr>
+                <td colspan="2" class="gizli">Kullanıcı Adı :</td>
+                <td>
+                    <b class="gizli" id="kAdi-text"></b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="gizli">Şifre :</td>
+                <td>
+                    <b class="gizli" id="sifre-text"></b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="gizli">Mail :</td>
+                <td>
+                    <b class="gizli" id="mail-text"></b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="gizli">Kod :</td>
+                <td>
+                    <b class="gizli" id="kod-text"></b>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>

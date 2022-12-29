@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+    a {
+      text-decoration: none;
+    }
+    .error {
+      color: red;
+      visibility: hidden;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <form method="post" id="form1">
+    <table border="0">
+      <tr>
+        <td>
+          <label>Kullanıcı Adı:</label>
+        </td>
+        <td>
+          <input type="text" id="kadi" onkeyup="control()"/>
+        </td>
+        <!-- <td>
+          <label id="kadi-error" class="error"></label>
+        </td> -->
+      </tr>
+      <tr>
+        <td>
+          <label>Şifre :</label>
+        </td>
+        <td>
+          <input type="password" id="sifre" onkeyup="control()"/>
+        </td>
+        <!-- <td>
+          <label id="sifre-error" class="error"></label>
+        </td> -->
+      </tr>
+      <tr>
+        <td>
+          <label>Şifre Tekrar :</label>
+        </td>
+        <td>
+          <input type="password" id="sifre-tkr" onkeyup="control()"/>
+        </td>
+        <!-- <td>
+          <label id="sifre-error-2" class="error"></label>
+        </td> -->
+      </tr>
+      <tr>
+        <td>
+          <label>E-Mail :</label>
+        </td>
+        <td>
+          <input type="email" id="mail" placeholder="asd@example.com" onkeyup="control()"/>
+        </td>
+        <!-- <td>
+          <label id="mail-error" class="error"></label>
+        </td> -->
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" id="tik" onchange="control()"/><a href="#">Kullanıcı Sözleşmesi</a>'ni okudum ve onaylıyorum.
+        </td>
+        <!-- <td>
+          <label id="tik-error" class="error"></label>
+        </td> -->
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="reset" value="Temizle" onclick="clearfix()"/>
+          <input type="button" value="Gönder" id="btn" disabled />
+        </td>
+      </tr>
+    </table>
+  </form>
+    <script src="./script.js"></script>
+  </body>
+</html>

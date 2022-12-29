@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form1">
+        <table>
+            <tr>
+                <td>K.Adi :</td>
+                <td>
+                    <input type="text" id="kadi">
+                </td>
+                <td>
+                    <label style="visibility: hidden; color: red;" id="kadi-hata"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>Şifre 1 :</td>
+                <td>
+                    <input type="password" id="sifre1">
+                </td>
+                <td>
+                    <label style="visibility: hidden; color: red;" id="sifreH">sa</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Şifre 2 :</td>
+                <td>
+                    <input type="password" id="sifre2">
+                </td>
+                <td>
+                    <label style="visibility: hidden; color: red;" id="sifreH2">sa</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td>
+                    <input type="text" id="mail">
+                </td>
+                <td>
+                    <label style="visibility: hidden; color: red;" id="mail-hata"></label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button type="button" onclick="control1()">Gönder</button>
+                </td>
+            </tr>
+            <tr>
+                <td style="visibility: hidden;" id="ad">
+                    Kullanıcı Adı :
+                </td>
+                <td>
+                    <label style="visibility: hidden;" id="lbl1"></label>
+                </td>
+            </tr>
+            <tr>
+                <td style="visibility: hidden;" id="sifre">
+                    Şifre :
+                </td>
+                <td>
+                    <label style="visibility: hidden;" id="lbl2"></label>
+                </td>
+            </tr>
+            <tr>
+                <td style="visibility: hidden;" id="email">
+                    Mail :
+                </td>
+                <td>
+                    <label style="visibility: hidden;" id="lbl3"></label>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+
+        function control1() {
+            var a = document.getElementById("kadi").value;
+            var b = document.getElementById("sifre1").value;
+            var c = document.getElementById("sifre2").value;
+            var d = document.forms["form1"]["mail"].value;
+            var e = document.getElementById("sifre1").value.length;
+            var f = document.getElementById("sifre2").value.length;
+
+            if(a ==""){
+                document.getElementById("kadi-hata").innerHTML = "Boş Geçilemez";
+                document.getElementById("kadi-hata").style.visibility = "visible";
+            }
+            else{
+                document.getElementById("lbl1").innerHTML = a;
+                document.getElementById("lbl1").style.visibility = "visible";
+                document.getElementById("ad").style.visibility = "visible";
+            }
+
+            if((e < 1 || e > 8 || f < 1 || f > 8)){
+                document.getElementById("sifreH").style.visibility = "visible";
+                document.getElementById("sifreH").innerHTML = "Hata";
+
+                document.getElementById("sifreH2").style.visibility = "visible";
+                document.getElementById("sifreH2").innerHTML = "Hata";
+                
+           }
+           else{
+                document.getElementById("lbl2").innerHTML = b;
+                document.getElementById("lbl2").style.visibility = "visible";
+                document.getElementById("sifre").style.visibility = "visible";
+            }
+
+            if(b != c){
+                document.getElementById("sifreH").innerHTML = "Şifreler Uyuşmuyor";
+                document.getElementById("sifreH").style.visibility = "visible";
+           }
+
+
+           if(d.indexOf("@") == -1){
+                document.getElementById("mail-hata").innerHTML = "@ işareti kullanın";
+                document.getElementById("mail-hata").style.visibility = "visible";
+           }
+           else{
+                document.getElementById("lbl3").innerHTML = d;
+                document.getElementById("lbl3").style.visibility = "visible";
+                document.getElementById("email").style.visibility = "visible";
+           }
+        }
+    </script>
+</body>
+</html>
